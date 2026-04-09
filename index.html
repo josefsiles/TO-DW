@@ -1,0 +1,123 @@
+<!-- Sitio web de Clinica Veterinaria Azteca para trabajo obligatorio de asignatura Diseño Web
+Está pagina es index.html, la principial donde se puede ver las distintas secciones que la componen como la etiqueta Head con los enlaces necesarios,
+La etiqueta Body para el cuerpo de la página que incluye un Header con un NAV para el menú y logotipo.
+La parte principial dividida en Section y finaliza con un Footer o píe de página. -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Se define el título de la página y los enlaces a los estilos CSS además del icono de la página web -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Veterinaria Azteca | Cuidamos tu mascota</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="images/logop.png" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <p><img src="images/logom.png" width="150"></p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="inicio" class="hero-principal">
+        <div class="hero-content">
+            <h1>Cuidamos de ellos <span>como tú lo haces</span></h1>
+            <p>En la Clínica Veterinaria Azteca combinamos tecnología médica de vanguardia con un trato humano y cercano. Porque tu mascota no es solo un paciente, es parte de tu familia.</p>
+            <div class="cta-buttons">
+                <a href="contacto.html" class="btn-primario">Reserva tu Cita</a>
+                <a href="#servicios" class="btn-secundario">Ver Servicios</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="images/animales.jpg" alt="Veterinario con perro">
+        </div>
+    </section>
+    <!-- Aquí irían el resto de secciones (Nosotros, Servicios, etc.) -->
+    <section id="servicios" class="servicios-container">
+        <h2>Nuestros Servicios</h2>
+        <div class="grid-servicios">
+            <!-- Fila 1 -->
+            <div class="card-servicio">
+                <p><img src="images/salud.jpg" height="100"></p>
+                <h3>Consulta General</h3>
+                <p>Revisiones completas para asegurar la salud preventiva de tu mascota.</p>
+            </div>
+            <div class="card-servicio">
+                <p><img src="images/preventiva.jpg" height="100"></p>
+                <h3>Vacunación</h3>
+                <p>Planes de inmunización personalizados según la edad y estilo de vida.</p>
+            </div>
+            <div class="card-servicio">
+                <p><img src="images/interna.jpg" height="100"></p>
+                <h3>Medicina Interna</h3>
+                <p>Nuestro servicio de medicina interna se encarga de diagnosticar y tratar enfermedades internas de tus mascotas.</p>
+            </div>
+            <!-- Fila 2 -->
+            <div class="card-servicio">
+                <p><img src="images/laboratorio.jpg" height="100"></p>
+                <h3>Laboratorio</h3>
+                <p>Análisis clínicos rápidos para diagnósticos precisos en poco tiempo.</p>
+            </div>
+            <div class="card-servicio">
+                <p><img src="images/ecografia.jpg" height="100"></p>
+                <h3>Radiología y Ecografía</h3>
+                <p>Nuestro servicio de radiología y ecografía permite un diagnóstico preciso y sin invasión.</p>
+            </div>
+            <div class="card-servicio">
+                <p><img src="images/hospitalizacion.jpg" height="100"></p>
+                <h3>Urgencias</h3>
+                <p>Atención inmediata y cuidados intensivos para situaciones críticas.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Pie de página con diversa información de contacto separada en 3 bloques -->
+    <footer>
+        <div class="footer-grid">
+            <!-- Columna Izquierda: Logo y Redes -->
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <p><img src="images/logom.png" width="150"></p>
+                </div>
+                <p class="eslogan">Expertos en salud animal, apasionados por la vida.</p>
+                <div class="iconos-redes-sociales">
+					<a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a> Facebook
+					<a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a> Instagram
+					<a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a> Linkedin
+                </div>
+            </div>
+            <!-- Columna Centro: Horario y Urgencias -->
+            <div class="footer-col">
+                <h4>Horarios</h4>
+                <div class="horarios">
+                    <p>Lunes a Viernes: 09:00 - 20:00</p>
+                    <p>Sábados: 10:00 - 14:00</p>
+                    <p>Domingos: Cerrado</p>
+                    <span class="urgencias">📞 Urgencias 24h: 600 000 000</span>
+                </div>
+            </div>
+            <!-- Columna Derecha: Contacto -->
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <div class="contacto-info">
+                    <p>📍 Calle Veterinaria 123, Ciudad</p>
+                    <p>📞 Tel: 912 345 678</p>
+                    <p>✉️ Email: info@azteca.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2024 Azteca Clínica Veterinaria. Todos los derechos reservados.
+        </div>
+    </footer>
+</body>
+</html>
