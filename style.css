@@ -63,6 +63,18 @@
             max-width: 800px;
         }
 
+        .datos {
+        display: flex; 
+        justify-content: space-around; 
+        flex-wrap: wrap; 
+        gap: 20px;
+        }
+
+        .hero-content strong {
+        font-size: 2rem; 
+        color: #27ae60;
+        }
+
         .hero-content h1 {
             font-size: 3.5rem;
             color: #9E518E;
@@ -224,11 +236,6 @@
 
         .iconos-redes-sociales  a{
             color: #9E518E;
-        }
-
-        .iconos-redes-sociales ul li{
-            position: left;
-            padding: 10px;
         }
 
         /* Columna Centro: Horarios */
